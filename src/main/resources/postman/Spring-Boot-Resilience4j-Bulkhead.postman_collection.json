@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "ccaa2753-f01b-4d6a-93b4-f639b62540b5",
+		"name": "Spring Boot Resilience4j Bulkhead",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5264287"
+	},
+	"item": [
+		{
+			"name": "Actuator",
+			"item": [
+				{
+					"name": "All Bulkheads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/bulkheads",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"bulkheads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Bulkheads Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/bulkheadevents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"bulkheadevents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Active Threads Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/resilience4j.bulkhead.active.thread.count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"resilience4j.bulkhead.active.thread.count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Available Concurrent Calls",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/resilience4j.bulkhead.available.concurrent.calls",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"resilience4j.bulkhead.available.concurrent.calls"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Available Thread Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/resilience4j.bulkhead.available.thread.count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"resilience4j.bulkhead.available.thread.count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Core Thread Pool Size",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/resilience4j.bulkhead.core.thread.pool.size",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"resilience4j.bulkhead.core.thread.pool.size"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Max Allowed Concurrent Calls",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/resilience4j.bulkhead.max.allowed.concurrent.calls",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"resilience4j.bulkhead.max.allowed.concurrent.calls"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Max Thread Pool Size",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/resilience4j.bulkhead.max.thread.pool.size",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"resilience4j.bulkhead.max.thread.pool.size"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Queue Capacity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/resilience4j.bulkhead.queue.capacity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"resilience4j.bulkhead.queue.capacity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Queue Depth",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/resilience4j.bulkhead.queue.depth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"resilience4j.bulkhead.queue.depth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Thread Pool Size",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics/resilience4j.bulkhead.thread.pool.size",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics",
+								"resilience4j.bulkhead.thread.pool.size"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bulkhead With Concurrent Calls",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies/1?bulkheadType=bulkhead-with-max-concurrent-calls",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1"
+					],
+					"query": [
+						{
+							"key": "bulkheadType",
+							"value": "bulkhead-with-max-concurrent-calls"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulkhead With Fallback Method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies/1?bulkheadType=bulkhead-with-max-concurrent-calls-and-fallback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1"
+					],
+					"query": [
+						{
+							"key": "bulkheadType",
+							"value": "bulkhead-with-max-concurrent-calls-and-fallback"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thread Pool Bulkhead",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies/1?bulkheadType=thread-pool-bulkhead",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1"
+					],
+					"query": [
+						{
+							"key": "bulkheadType",
+							"value": "thread-pool-bulkhead"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Custom Bulkhead",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies/1?bulkheadType=custom-bulkhead",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1"
+					],
+					"query": [
+						{
+							"key": "bulkheadType",
+							"value": "custom-bulkhead"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Custom Thread Pool Bulkhead",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies/1?bulkheadType=custom-thread-pool-bulkhead",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1"
+					],
+					"query": [
+						{
+							"key": "bulkheadType",
+							"value": "custom-thread-pool-bulkhead"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulkhead With Max Concurrent Calls And Max Wait Duration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies/1?bulkheadType=bulkhead-with-max-concurrent-calls-and-max-wait-duration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1"
+					],
+					"query": [
+						{
+							"key": "bulkheadType",
+							"value": "bulkhead-with-max-concurrent-calls-and-max-wait-duration"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

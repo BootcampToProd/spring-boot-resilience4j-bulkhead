@@ -1,0 +1,22 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+resilience4j.bulkhead:
+  instances:
+    bulkheadWithConcurrentCalls:
+      maxConcurrentCalls: 5
+      writableStackTraceEnabled: true
+    bulkheadWithConcurrentCallsAndWaitDuration:
+      maxWaitDuration: 2000ms
+      maxConcurrentCalls: 5
+
+resilience4j.thread-pool-bulkhead:
+  instances:
+    threadPoolBulkhead:
+      maxThreadPoolSize: 5
+      coreThreadPoolSize: 2
+      queueCapacity: 10
+      writableStackTraceEnabled: true
